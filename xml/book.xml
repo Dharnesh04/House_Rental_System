@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml-model href="book.dtd"?>
+<book>
+    <user>
+        <name>
+            <first_name>yoyo</first_name>
+            <last_name>kumay</last_name>
+        </name>
+        <email>abc@gmail.com</email>
+        <address>12 street ...</address>
+    </user>
+    <user>        
+        <name>
+            <first_name>bob</first_name>
+            <last_name>murali</last_name>
+        </name>
+        <email>bm@gmail.com</email>
+        <address>69 street ...</address>
+    </user>
+    <user>
+        <name>
+            <first_name>jessi</first_name>
+            <last_name>pinkman</last_name>
+        </name>
+        <email>beyotch@gmail.com</email>
+        <address>abq street ...</address>
+    </user>
+</book>

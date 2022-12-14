@@ -1,0 +1,30 @@
+{
+    "contacts": {
+      "user": [
+        {
+          "name": {
+            "first_name": "yoyo",
+            "last_name": "kumay"
+          },
+          "email": "abc@gmail.com",
+          "address": "12 street ..."
+        },
+        {
+          "name": {
+            "first_name": "bob",
+            "last_name": "murali"
+          },
+          "email": "bm@gmail.com",
+          "address": "69 street ..."
+        },
+        {
+          "name": {
+            "first_name": "jessi",
+            "last_name": "pinkman"
+          },
+          "email": "beyotch@gmail.com",
+          "address": "abq street ..."
+        }
+      ]
+    }
+  }

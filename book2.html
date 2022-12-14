@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="author" content="hd" />
+        <meta name="description" content="HOUSE RENTAL SYSTEM" />
+        <meta name="keywords" content="Give Your Keywords for SEO" />
+        
+        <title>HOUSE RENTAL SYSTEM</title>
+        <!--ADING CSS HERE-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+    
+    <body>
+        <!--Header Starts HERE-->
+        <header class="header">
+            <div class="wrapper">
+                <h1>HOUSE RENTAL SYSTEM</h1>
+            </div>
+            
+        </header>
+        <!--Header Ends HERE-->
+        
+        <!--Menu Starts HERE-->
+        <nav class="menu">
+            <div class="wrapper">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About Us</li></a>
+                    <a href="contact.html"><li>Contact Us</li></a>
+                    <a href="login.html"><li>Log In</li></a>
+                    <a href="delete.html"><li>Delete</li></a>
+                </ul>
+            </div>
+        </nav>
+        <!--Menu Ends HERE-->
+        
+        <!--Main Body Starts HERE-->
+
+        <div class="main">
+            <div class="wrapper">
+                <div class="book-house">
+                    <br>
+                    <br>
+                    
+                    <!--House Details Here-->
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images\livingroom.jpg" style="width:50%">
+                          <div class="text">Living room</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images\bedroom.jpg" style="width:50%">
+                          <div class="text">Bedroom</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="images\Kitchen.jpg" style="width:50%">
+                          <div class="text">Kitchen</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images\bath.jpg" style="width:50%">
+                            <div class="text">Bathroom</div>
+                          </div>
+                      </div>
+                      <br>
+
+                      </div>
+                    <span class="house-price">INR 120000</span>
+                    <h2 align="center">
+                        "DESCRIPTION"
+                    </h2>
+                    <br>
+                </div>
+                <p style="text-align:center;">“Gorgeous 4-bedroom, 2-bathroom home. This property offers 1,160 square feet of living space and a lot size of 5,499 square feet. Your family and loved ones will enjoy the spacious backyard, perfect for family gatherings! Come and take a look at this beauty....Don't miss out!”</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!--Client Booking Detail Entry-->
+                <div class="container">
+                    <form action = "book/action" method="post" ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>              
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="fname">First Name</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" name="user" ng-model="user" required>
+                            <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                            <span ng-show="myForm.user.$error.required">First Name is required.</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="user2">Last Name</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" name="user2" ng-model="user2" required>
+                            <span style="color:red" ng-show="myForm.user2.$dirty && myForm.user2.$invalid">
+                            <span ng-show="myForm.user2.$error.required">Last Name is required.</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="email">Email</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="email" size="163" name="email" ng-model="email" required>
+                            <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                            <span ng-show="myForm.email.$error.required">Email is required.</span>
+                            <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                            </span> 
+                          </div>
+                        </div>
+          
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="user3">Address</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" name="user3" ng-model="user3" required>
+                            <span style="color:red" ng-show="myForm.user3.$dirty && myForm.user3.$invalid">
+                            <span ng-show="myForm.user3.$error.required">Address is required.</span>
+                            </span>
+                                   
+                          </div>
+                        </div>
+                        <div class="row">
+                          <input type="submit"
+                          ng-disabled="myForm.user.$dirty && myForm.user.$invalid || 
+                          myForm.user2.$dirty && myForm.user2.$invalid ||
+                          myForm.user3.$dirty && myForm.user3.$invalid ||
+                          myForm.email.$dirty && myForm.email.$invalid">    
+                        </div>
+                      </form>
+                  </div>
+            </div>
+        </div>
+        <!--Main Body Ends HERE-->
+        <script src="assets\book.js"></script>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('validateCtrl', function($scope) {
+            ;
+            });
+        </script>
+
+        
+        <!--Footer Starts HERE-->
+        <footer class="footer">
+            <div class="wrapper">
+                <p>&copy; <a href="#">House Rental System</a>. All rights reserved 2022.</p>
+            </div>
+        </footer>
+        <!--Footer Ends HERE-->
+    </body>
+</html>

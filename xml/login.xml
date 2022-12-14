@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="login.dtd"?>
+
+
+    <logins>
+    <login>
+        <Email id="1">Patrick</Email>
+        <Password>Haha@123</Password>
+    </login>
+    <login>        
+        <Email id="2">Bateman</Email>
+        <Password>lol@321</Password>
+    </login>
+    <login>
+            <Email id="3">Saul</Email>
+        <Password>yoyo@456</Password>
+    </login>
+</logins>

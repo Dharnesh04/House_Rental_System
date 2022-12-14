@@ -1,0 +1,18 @@
+{
+    "logins": {
+      "login": [
+        {
+          "Email": "Patrick",
+          "Password": "Haha@123"
+        },
+        {
+          "Email": "Bateman",
+          "Password": "lol@321"
+        },
+        {
+          "Email": "Saul",
+          "Password": "yoyo@456"
+        }
+      ]
+    }
+  }
